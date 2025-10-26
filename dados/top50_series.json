@@ -1,0 +1,402 @@
+[
+    {
+        "Nome": "Stranger Things",
+        "Data": "2025-11-26",
+        "Popularidade": 78.8373,
+        "Gênero": "Drama, Sci-Fi & Fantasy, Mistério",
+        "Tipo": "Renovada",
+        "Temporada": 5
+    },
+    {
+        "Nome": "Sturm der Liebe",
+        "Data": "2025-12-01",
+        "Popularidade": 35.361,
+        "Gênero": "Drama, Soap",
+        "Tipo": "Renovada",
+        "Temporada": 22
+    },
+    {
+        "Nome": "Frieren e a Jornada para o Além",
+        "Data": "2026-01-16",
+        "Popularidade": 35.0337,
+        "Gênero": "Animação, Action & Adventure, Drama, Sci-Fi & Fantasy",
+        "Tipo": "Renovada",
+        "Temporada": 2
+    },
+    {
+        "Nome": "Vila Sésamo",
+        "Data": "2025-11-10",
+        "Popularidade": 29.7665,
+        "Gênero": "Kids, Comédia",
+        "Tipo": "Renovada",
+        "Temporada": 56
+    },
+    {
+        "Nome": "Fallout",
+        "Data": "2025-12-16",
+        "Popularidade": 29.4858,
+        "Gênero": "Action & Adventure, Drama",
+        "Tipo": "Renovada",
+        "Temporada": 2
+    },
+    {
+        "Nome": "Maxton Hall - O mundo entre nós",
+        "Data": "2025-11-07",
+        "Popularidade": 26.3706,
+        "Gênero": "Drama",
+        "Tipo": "Renovada",
+        "Temporada": 2
+    },
+    {
+        "Nome": "Golden Globe Awards",
+        "Data": "2026-01-11",
+        "Popularidade": 26.0471,
+        "Gênero": "Não informado",
+        "Tipo": "Renovada",
+        "Temporada": 83
+    },
+    {
+        "Nome": "Pluribus",
+        "Data": "2025-11-06",
+        "Popularidade": 4.3281,
+        "Gênero": "Drama, Sci-Fi & Fantasy",
+        "Tipo": "Nova Série",
+        "Temporada": 1
+    },
+    {
+        "Nome": "Spartacus: House of Ashur",
+        "Data": "2025-12-05",
+        "Popularidade": 3.7459,
+        "Gênero": "Drama, Action & Adventure",
+        "Tipo": "Nova Série",
+        "Temporada": 1
+    },
+    {
+        "Nome": "Sandokan",
+        "Data": "2025-12-01",
+        "Popularidade": 3.1486,
+        "Gênero": "Action & Adventure, Drama, War & Politics",
+        "Tipo": "Nova Série",
+        "Temporada": 1
+    },
+    {
+        "Nome": "O Manipulado",
+        "Data": "2025-11-05",
+        "Popularidade": 2.6517,
+        "Gênero": "Crime",
+        "Tipo": "Nova Série",
+        "Temporada": 1
+    },
+    {
+        "Nome": "Os Abandonados",
+        "Data": "2025-12-04",
+        "Popularidade": 2.5921,
+        "Gênero": "Drama, Faroeste",
+        "Tipo": "Nova Série",
+        "Temporada": 1
+    },
+    {
+        "Nome": "Robin Hood",
+        "Data": "2025-11-02",
+        "Popularidade": 2.5247,
+        "Gênero": "Drama, Action & Adventure",
+        "Tipo": "Nova Série",
+        "Temporada": 1
+    },
+    {
+        "Nome": "Tudo é Justo",
+        "Data": "2025-11-04",
+        "Popularidade": 2.4547,
+        "Gênero": "Drama, Comédia",
+        "Tipo": "Nova Série",
+        "Temporada": 1
+    },
+    {
+        "Nome": "O Monstro em Mim",
+        "Data": "2025-11-13",
+        "Popularidade": 1.9519,
+        "Gênero": "Mistério, Drama",
+        "Tipo": "Nova Série",
+        "Temporada": 1
+    },
+    {
+        "Nome": "Até o Último Samurai",
+        "Data": "2025-11-13",
+        "Popularidade": 1.9175,
+        "Gênero": "Action & Adventure, Drama",
+        "Tipo": "Nova Série",
+        "Temporada": 1
+    },
+    {
+        "Nome": "Crutch",
+        "Data": "2025-11-03",
+        "Popularidade": 1.8416,
+        "Gênero": "Comédia",
+        "Tipo": "Nova Série",
+        "Temporada": 1
+    },
+    {
+        "Nome": "All Her Fault",
+        "Data": "2025-11-06",
+        "Popularidade": 1.7766,
+        "Gênero": "Drama",
+        "Tipo": "Nova Série",
+        "Temporada": 1
+    },
+    {
+        "Nome": "The Mighty Nein",
+        "Data": "2025-11-19",
+        "Popularidade": 1.6383,
+        "Gênero": "Animação, Sci-Fi & Fantasy",
+        "Tipo": "Nova Série",
+        "Temporada": 1
+    },
+    {
+        "Nome": "친애하는 X",
+        "Data": "2025-11-06",
+        "Popularidade": 1.5505,
+        "Gênero": "Crime, Drama",
+        "Tipo": "Nova Série",
+        "Temporada": 1
+    },
+    {
+        "Nome": "Como um Relâmpago",
+        "Data": "2025-11-06",
+        "Popularidade": 1.4885,
+        "Gênero": "Drama, Crime",
+        "Tipo": "Nova Série",
+        "Temporada": 1
+    },
+    {
+        "Nome": "藤本タツキ 17-26",
+        "Data": "2025-11-08",
+        "Popularidade": 1.46,
+        "Gênero": "Animação",
+        "Tipo": "Nova Série",
+        "Temporada": 1
+    },
+    {
+        "Nome": "I Love LA",
+        "Data": "2025-11-02",
+        "Popularidade": 1.2782,
+        "Gênero": "Comédia",
+        "Tipo": "Nova Série",
+        "Temporada": 1
+    },
+    {
+        "Nome": "Anatomía de un instante",
+        "Data": "2025-11-20",
+        "Popularidade": 1.2376,
+        "Gênero": "Drama, War & Politics",
+        "Tipo": "Nova Série",
+        "Temporada": 1
+    },
+    {
+        "Nome": "The Faithful",
+        "Data": "2026-03-22",
+        "Popularidade": 1.2341,
+        "Gênero": "Drama",
+        "Tipo": "Nova Série",
+        "Temporada": 1
+    },
+    {
+        "Nome": "A Caçada",
+        "Data": "2025-12-03",
+        "Popularidade": 1.2101,
+        "Gênero": "Drama, Mistério",
+        "Tipo": "Nova Série",
+        "Temporada": 1
+    },
+    {
+        "Nome": "마지막 썸머",
+        "Data": "2025-11-01",
+        "Popularidade": 1.1852,
+        "Gênero": "Drama, Comédia",
+        "Tipo": "Nova Série",
+        "Temporada": 1
+    },
+    {
+        "Nome": "Merteuil",
+        "Data": "2025-11-14",
+        "Popularidade": 1.182,
+        "Gênero": "Drama",
+        "Tipo": "Nova Série",
+        "Temporada": 1
+    },
+    {
+        "Nome": "Strip Law",
+        "Data": "2026-02-20",
+        "Popularidade": 1.1714,
+        "Gênero": "Animação, Comédia, Drama",
+        "Tipo": "Nova Série",
+        "Temporada": 1
+    },
+    {
+        "Nome": "TRINITY",
+        "Data": "2026-07-16",
+        "Popularidade": 1.1565,
+        "Gênero": "Drama",
+        "Tipo": "Nova Série",
+        "Temporada": 1
+    },
+    {
+        "Nome": "O Cuco de Cristal",
+        "Data": "2025-11-14",
+        "Popularidade": 1.1343,
+        "Gênero": "Drama",
+        "Tipo": "Nova Série",
+        "Temporada": 1
+    },
+    {
+        "Nome": "The Twelve Dates 'Til Christmas",
+        "Data": "2025-12-05",
+        "Popularidade": 1.1174,
+        "Gênero": "Comédia",
+        "Tipo": "Nova Série",
+        "Temporada": 1
+    },
+    {
+        "Nome": "Você Estava Lá",
+        "Data": "2025-11-07",
+        "Popularidade": 1.0746,
+        "Gênero": "Crime, Drama, Mistério",
+        "Tipo": "Nova Série",
+        "Temporada": 1
+    },
+    {
+        "Nome": "Yakarta",
+        "Data": "2025-11-06",
+        "Popularidade": 0.9656,
+        "Gênero": "Comédia",
+        "Tipo": "Nova Série",
+        "Temporada": 1
+    },
+    {
+        "Nome": "키스는 괜히 해서!",
+        "Data": "2025-11-12",
+        "Popularidade": 0.9268,
+        "Gênero": "Drama",
+        "Tipo": "Nova Série",
+        "Temporada": 1
+    },
+    {
+        "Nome": "Las hijas de la criada",
+        "Data": "2025-11-30",
+        "Popularidade": 0.8959,
+        "Gênero": "Não informado",
+        "Tipo": "Nova Série",
+        "Temporada": 1
+    },
+    {
+        "Nome": "人間標本",
+        "Data": "2025-12-19",
+        "Popularidade": 0.8702,
+        "Gênero": "Drama, Mistério",
+        "Tipo": "Nova Série",
+        "Temporada": 1
+    },
+    {
+        "Nome": "Arcadia",
+        "Data": "2025-11-10",
+        "Popularidade": 0.8625,
+        "Gênero": "Drama",
+        "Tipo": "Nova Série",
+        "Temporada": 1
+    },
+    {
+        "Nome": "프로보노",
+        "Data": "2025-11-29",
+        "Popularidade": 0.839,
+        "Gênero": "Comédia",
+        "Tipo": "Nova Série",
+        "Temporada": 1
+    },
+    {
+        "Nome": "Sra. Playmen",
+        "Data": "2025-11-12",
+        "Popularidade": 0.8254,
+        "Gênero": "Drama",
+        "Tipo": "Nova Série",
+        "Temporada": 1
+    },
+    {
+        "Nome": "아이돌아이",
+        "Data": "2025-12-15",
+        "Popularidade": 0.8154,
+        "Gênero": "Comédia, Mistério",
+        "Tipo": "Nova Série",
+        "Temporada": 1
+    },
+    {
+        "Nome": "ひらやすみ",
+        "Data": "2025-11-03",
+        "Popularidade": 0.7957,
+        "Gênero": "Drama",
+        "Tipo": "Nova Série",
+        "Temporada": 1
+    },
+    {
+        "Nome": "Como Ganhar na Loteria",
+        "Data": "2025-11-14",
+        "Popularidade": 0.7466,
+        "Gênero": "Drama, Comédia",
+        "Tipo": "Nova Série",
+        "Temporada": 1
+    },
+    {
+        "Nome": "Power: Origins",
+        "Data": "2026-11-30",
+        "Popularidade": 0.7322,
+        "Gênero": "Crime, Drama",
+        "Tipo": "Nova Série",
+        "Temporada": 1
+    },
+    {
+        "Nome": "Las Aventuras de Alicia y Francisco",
+        "Data": "2026-12-24",
+        "Popularidade": 0.6994,
+        "Gênero": "Animação, Action & Adventure, Kids",
+        "Tipo": "Nova Série",
+        "Temporada": 1
+    },
+    {
+        "Nome": "The American Revolution",
+        "Data": "2025-11-16",
+        "Popularidade": 0.6942,
+        "Gênero": "Documentário",
+        "Tipo": "Nova Série",
+        "Temporada": 1
+    },
+    {
+        "Nome": "スキャンダルイブ",
+        "Data": "2025-11-19",
+        "Popularidade": 0.6915,
+        "Gênero": "Mistério",
+        "Tipo": "Nova Série",
+        "Temporada": 1
+    },
+    {
+        "Nome": "MasterChef Celebridades",
+        "Data": "2025-11-18",
+        "Popularidade": 0.6902,
+        "Gênero": "Reality",
+        "Tipo": "Nova Série",
+        "Temporada": 1
+    },
+    {
+        "Nome": "The Danish Woman",
+        "Data": "2025-12-31",
+        "Popularidade": 0.6821,
+        "Gênero": "Comédia, Drama",
+        "Tipo": "Nova Série",
+        "Temporada": 1
+    },
+    {
+        "Nome": "シャドウワーク",
+        "Data": "2025-11-23",
+        "Popularidade": 0.6525,
+        "Gênero": "Drama",
+        "Tipo": "Nova Série",
+        "Temporada": 1
+    }
+]

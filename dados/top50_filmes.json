@@ -1,0 +1,302 @@
+[
+    {
+        "Nome": "Avatar: Fogo e Cinzas",
+        "Data": "2025-12-17",
+        "Popularidade": 30.1126,
+        "Gênero": "Ficção científica, Aventura, Fantasia"
+    },
+    {
+        "Nome": "Wicked: Parte 2",
+        "Data": "2025-11-19",
+        "Popularidade": 15.0922,
+        "Gênero": "Fantasia, Romance, Drama"
+    },
+    {
+        "Nome": "O Mandaloriano e Grogu",
+        "Data": "2026-05-20",
+        "Popularidade": 13.8163,
+        "Gênero": "Ação, Aventura, Ficção científica"
+    },
+    {
+        "Nome": "Avengers: Doomsday",
+        "Data": "2026-12-17",
+        "Popularidade": 13.2883,
+        "Gênero": "Ficção científica"
+    },
+    {
+        "Nome": "Greenland 2: Migration",
+        "Data": "2026-01-08",
+        "Popularidade": 11.5079,
+        "Gênero": "Ação, Aventura, Thriller, Ficção científica"
+    },
+    {
+        "Nome": "Truque de Mestre: O 3° Ato",
+        "Data": "2025-11-12",
+        "Popularidade": 10.938,
+        "Gênero": "Thriller, Crime, Mistério"
+    },
+    {
+        "Nome": "Zootopia 2",
+        "Data": "2025-11-26",
+        "Popularidade": 10.8798,
+        "Gênero": "Família, Comédia, Crime, Aventura, Animação"
+    },
+    {
+        "Nome": "Predador: Terras Selvagens",
+        "Data": "2025-11-05",
+        "Popularidade": 10.6902,
+        "Gênero": "Ação, Ficção científica"
+    },
+    {
+        "Nome": "The Bride!",
+        "Data": "2026-03-04",
+        "Popularidade": 10.133,
+        "Gênero": "Terror, Romance, Drama, Ficção científica, Fantasia, Música"
+    },
+    {
+        "Nome": "28 Years Later: The Bone Temple",
+        "Data": "2026-01-14",
+        "Popularidade": 9.62,
+        "Gênero": "Terror, Thriller, Ficção científica"
+    },
+    {
+        "Nome": "Five Nights at Freddy's 2",
+        "Data": "2025-12-03",
+        "Popularidade": 7.1323,
+        "Gênero": "Terror, Thriller"
+    },
+    {
+        "Nome": "Anaconda",
+        "Data": "2025-12-24",
+        "Popularidade": 6.8414,
+        "Gênero": "Aventura, Comédia, Terror"
+    },
+    {
+        "Nome": "Vivo ou Morto: Um Mistério Knives Out",
+        "Data": "2025-11-26",
+        "Popularidade": 6.807,
+        "Gênero": "Comédia, Drama, Mistério"
+    },
+    {
+        "Nome": "A Empregada",
+        "Data": "2025-12-19",
+        "Popularidade": 6.7184,
+        "Gênero": "Mistério, Thriller"
+    },
+    {
+        "Nome": "Homem-Aranha: Um Novo Dia",
+        "Data": "2026-07-29",
+        "Popularidade": 6.5808,
+        "Gênero": "Ficção científica, Ação, Aventura"
+    },
+    {
+        "Nome": "O Sobrevivente",
+        "Data": "2025-11-05",
+        "Popularidade": 6.4771,
+        "Gênero": "Ação, Thriller, Ficção científica"
+    },
+    {
+        "Nome": "A Odisseia",
+        "Data": "2026-07-15",
+        "Popularidade": 6.4412,
+        "Gênero": "Aventura, Drama, Fantasia"
+    },
+    {
+        "Nome": "C’est quoi l’amour?",
+        "Data": "2025-12-17",
+        "Popularidade": 6.1751,
+        "Gênero": "Comédia, Drama"
+    },
+    {
+        "Nome": "Police Flash 80",
+        "Data": "2026-03-18",
+        "Popularidade": 5.975,
+        "Gênero": "Comédia"
+    },
+    {
+        "Nome": "Ramayana: Parte Um",
+        "Data": "2026-11-06",
+        "Popularidade": 5.8554,
+        "Gênero": "Ação, Drama, Fantasia"
+    },
+    {
+        "Nome": "Mere Raho",
+        "Data": "2025-12-12",
+        "Popularidade": 5.8206,
+        "Gênero": "Fantasia, Romance"
+    },
+    {
+        "Nome": "The Magic Faraway Tree",
+        "Data": "2025-12-19",
+        "Popularidade": 5.5795,
+        "Gênero": "Família, Fantasia, Aventura"
+    },
+    {
+        "Nome": "Доктор Гаф",
+        "Data": "2026-03-19",
+        "Popularidade": 5.4708,
+        "Gênero": "Comédia, Família"
+    },
+    {
+        "Nome": "劇場版 緊急取調室 THE FINAL",
+        "Data": "2025-12-26",
+        "Popularidade": 5.4501,
+        "Gênero": "Crime"
+    },
+    {
+        "Nome": "Война и мир",
+        "Data": "2027-02-18",
+        "Popularidade": 5.4352,
+        "Gênero": "Drama"
+    },
+    {
+        "Nome": "Perfectly Imperfect",
+        "Data": "2025-11-06",
+        "Popularidade": 5.3791,
+        "Gênero": "Comédia, Romance"
+    },
+    {
+        "Nome": "Shrek 5",
+        "Data": "2027-06-30",
+        "Popularidade": 5.369,
+        "Gênero": "Animação, Família, Comédia, Fantasia"
+    },
+    {
+        "Nome": "Rebuilding",
+        "Data": "2025-12-17",
+        "Popularidade": 5.3029,
+        "Gênero": "Drama"
+    },
+    {
+        "Nome": "Carry On Jatta 4",
+        "Data": "2026-06-26",
+        "Popularidade": 5.2976,
+        "Gênero": "Comédia"
+    },
+    {
+        "Nome": "Mastiii 4",
+        "Data": "2025-11-21",
+        "Popularidade": 5.2416,
+        "Gênero": "Comédia, Drama"
+    },
+    {
+        "Nome": "Within",
+        "Data": "2026-04-16",
+        "Popularidade": 5.2382,
+        "Gênero": "Terror, Thriller"
+    },
+    {
+        "Nome": "हक़",
+        "Data": "2025-11-07",
+        "Popularidade": 5.2023,
+        "Gênero": "Drama"
+    },
+    {
+        "Nome": "Exit Protocol",
+        "Data": "2025-11-14",
+        "Popularidade": 5.1865,
+        "Gênero": "Ação, Thriller"
+    },
+    {
+        "Nome": "Ёлки 12",
+        "Data": "2025-12-18",
+        "Popularidade": 5.1819,
+        "Gênero": "Comédia"
+    },
+    {
+        "Nome": "Calle Málaga",
+        "Data": "2026-03-18",
+        "Popularidade": 5.1714,
+        "Gênero": "Drama"
+    },
+    {
+        "Nome": "A Árvore do Conhecimento",
+        "Data": "2025-11-19",
+        "Popularidade": 5.0616,
+        "Gênero": "Drama, Comédia"
+    },
+    {
+        "Nome": "Spider-Man: Beyond the Spider-Verse",
+        "Data": "2027-06-18",
+        "Popularidade": 5.0536,
+        "Gênero": "Animação, Ação, Aventura, Ficção científica"
+    },
+    {
+        "Nome": "O'Romeo",
+        "Data": "2026-02-13",
+        "Popularidade": 5.0288,
+        "Gênero": null
+    },
+    {
+        "Nome": "日本統一７１",
+        "Data": "2025-11-05",
+        "Popularidade": 5.0219,
+        "Gênero": null
+    },
+    {
+        "Nome": "வா வாத்தியார்",
+        "Data": "2025-12-25",
+        "Popularidade": 5.0057,
+        "Gênero": "Drama, Comédia"
+    },
+    {
+        "Nome": "Sonic 4: O Filme",
+        "Data": "2027-03-19",
+        "Popularidade": 4.9686,
+        "Gênero": "Ação, Aventura, Comédia, Família, Ficção científica"
+    },
+    {
+        "Nome": "Woodwalkers 2",
+        "Data": "2026-01-29",
+        "Popularidade": 4.9484,
+        "Gênero": "Fantasia, Família"
+    },
+    {
+        "Nome": "金髪",
+        "Data": "2025-11-21",
+        "Popularidade": 4.936,
+        "Gênero": "Drama"
+    },
+    {
+        "Nome": "Nightmares",
+        "Data": "2026-10-01",
+        "Popularidade": 4.9029,
+        "Gênero": "Drama, Thriller"
+    },
+    {
+        "Nome": "Untitled Teenage Mutant Ninja Turtles: Mutant Mayhem sequel",
+        "Data": "2027-09-17",
+        "Popularidade": 4.8707,
+        "Gênero": "Ação, Aventura, Animação, Comédia, Família"
+    },
+    {
+        "Nome": "The Super Mario Galaxy Movie",
+        "Data": "2026-04-01",
+        "Popularidade": 4.8251,
+        "Gênero": "Família, Comédia, Aventura, Animação"
+    },
+    {
+        "Nome": "Jumanji 3",
+        "Data": "2026-12-10",
+        "Popularidade": 4.8114,
+        "Gênero": "Fantasia"
+    },
+    {
+        "Nome": "Nuremberg",
+        "Data": "2025-11-06",
+        "Popularidade": 4.7938,
+        "Gênero": "História, Drama, Thriller"
+    },
+    {
+        "Nome": "Good Luck, Have Fun, Don't Die!",
+        "Data": "2026-01-30",
+        "Popularidade": 4.7633,
+        "Gênero": "Ação, Aventura, Ficção científica"
+    },
+    {
+        "Nome": "自殺通告",
+        "Data": "2025-11-07",
+        "Popularidade": 4.6216,
+        "Gênero": "Drama, Mistério"
+    }
+]
