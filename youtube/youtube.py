@@ -120,6 +120,7 @@ for index, linha in df_final.iterrows():
 json_resultados = json.dumps(resultados_youtube, ensure_ascii=False, indent=4)
 
 # Salvar em arquivo
-caminho_saida = os.path.join(base_dir, "..", "dados", "resultados_youtube.json")
+caminho_saida = os.path.join(base_dir, "..", "youtube", "resultados_youtube.json")
 with open(caminho_saida, "w", encoding="utf-8") as f:
     f.write(json_resultados)
+
