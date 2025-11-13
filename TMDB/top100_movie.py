@@ -2,7 +2,7 @@ import pandas as pd #importação do pandas para a manipulação dos dados
 import json #importação da formatação JSON, formato em que os dados devem ser retornados
 
 #arquivos de entrada e saída 
-CSV_INPUT = "filmes_futuros_filtrados.csv.csv" #nome do arquivo csv em que contém todos os filmes futuros
+CSV_INPUT = "filmes_futuros_filtrados.csv" #nome do arquivo csv em que contém todos os filmes futuros
 CSV_OUTPUT = "filmes_top100.csv" #nome do novo arquivo csv  gerado
 JSON_OUTPUT = "filmes_top100.json" #nome do novo arquivo json  gerado
 
