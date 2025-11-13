@@ -1,33 +1,35 @@
 import pandas as pd
-from analise import unificar_dados, normalizarlizacao, calcular_sucesso
+from analise import unificar_dados, normalizar_dados, calcular_sucesso
 
-print("\n Iniciando Análise dos Filmes e Séries...")   
+print("\n🎬 Iniciando Análise dos Filmes e Séries...")
 
+# --- Unificação dos dados ---
 df_unificado = unificar_dados()
-if df_unificado is None:
-    print("Execução interrompida.")
+if df_unificado.empty:
+    print("🚨 Nenhum dado foi carregado. Encerrando execução.")
+    exit()
 
-df_normalizado = normalizarlizacao(df_unificado)
+# --- Normalização ---
+df_normalizado = normalizar_dados(df_unificado)
+
+# --- Cálculo de sucesso ---
 df_final = calcular_sucesso(df_normalizado)
 
-# Lista os 15 filmes/séries de sucesso
-print("\n Top 15 Obras de Sucesso: ")
+# --- Top 15 obras de sucesso ---
+print("\n📋 Colunas disponíveis no DataFrame final:\n", df_final.columns.tolist())
+print("\n🏆 Top 15 Obras de Sucesso:")
 df_top15 = df_final.sort_values("sucesso_pontos", ascending=False).head(15)
-colunas_exibicao = ["titulo"]
+colunas_exibicao = ["titulo_x", "sucesso_classificar", "sucesso_pontos"]
 print(df_top15[colunas_exibicao].to_string(index=False))
 
-# Filtrando apenas filmes
-filme = df_final["tipo_obra"] == "filme"
-df_filme = df_final[filme]
-
-# Filtrando apenas séries
-serie = df_final["tipo_obra"] == "serie"
-df_serie = df_final[serie]
-
-print("\n Top 10 Filmes de Sucesso: ")
-df_top10_filmes = df_filme.sort_values("sucesso_pontos", ascending=False).head(10)
+# --- Top 10 Filmes ---
+print("\n🎥 Top 10 Filmes de Sucesso:")
+df_filmes = df_final[df_final["tipo_obra_x"] == "filme"]
+df_top10_filmes = df_filmes.sort_values("sucesso_pontos", ascending=False).head(10)
 print(df_top10_filmes[colunas_exibicao].to_string(index=False))
 
-print("\n  Top 10 Séries de Sucesso: ")
-df_top10_serie = df_serie.sort_values("sucesso_pontos", ascending=False).head(10)
-print(df_top10_serie[colunas_exibicao].to_string(index=False))
+# --- Top 10 Séries ---
+print("\n📺 Top 10 Séries de Sucesso:")
+df_series = df_final[df_final["tipo_obra_x"] == "serie"]
+df_top10_series = df_series.sort_values("sucesso_pontos", ascending=False).head(10)
+print(df_top10_series[colunas_exibicao].to_string(index=False))
