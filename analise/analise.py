@@ -3,10 +3,17 @@ from sklearn.preprocessing import MinMaxScaler
 import os
 import json
 
-# Variavel está armazenando o caminho dos arquivos!
-DADOS_PATH = "./dados/"
-MASTODON_PATH = "./mastodon/mastodon_coleta/"
-YOUTUBE_PATH =  "./youtube/"
+BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
+
+DADOS_PATH = os.path.join(BASE_DIR, "dados")
+MASTODON_PATH = os.path.join(BASE_DIR, "mastodon", "mastodon_coleta")
+YOUTUBE_PATH = os.path.join(BASE_DIR, "youtube")
+
+print(f"\n🧭 Diretório base detectado: {BASE_DIR}")
+print(f"📁 Caminho DADOS_PATH: {DADOS_PATH}")
+print(f"📁 Caminho MASTODON_PATH: {MASTODON_PATH}")
+print(f"📁 Caminho YOUTUBE_PATH: {YOUTUBE_PATH}\n")
+
 
 # Carregando dados do TMDB
 def carregar_dados_tmdb(nome_arquivo, tipo_obra, categoria):
@@ -81,8 +88,11 @@ def carregar_dados_mastodon():
 
         print(f"\n 📂 Foram carregados do Mastodon: {df_mastodon.shape[0]} registros.")
         return df_mastodon
-    except:
-        print("\n Atenção: Arquivo do Mastodon não encontrado.")
+
+    except Exception as e:
+        print(f"\n ⚠️ Atenção: Arquivo do Mastodon não encontrado. Erro: {e}")
+        # Retornar DataFrame vazio evita travamento
+        return pd.DataFrame(columns=["hashtag_chave", "quantidade_posts"])
 
 # Carregando dados do YouTube
 def carregar_dados_youtube(nome_arquivo, tipo_obra, categoria):
@@ -123,22 +133,34 @@ def dados_youtube():
 # Juntando os dados do TMDB, Mastodon e YouTube
 def unificar_dados():
     df_tmdb_final = unificar_dados_tmdb()
-    
     df_mastodon_final = carregar_dados_mastodon()
-
     df_youtube_final = dados_youtube()
- 
-    df_tmdb_mastodon = pd.merge(df_tmdb_final, df_mastodon_final[["hashtag_chave", "quantidade_posts"]], on="hashtag_chave", how="left")
-    df_unificado_tudo = pd.merge(df_tmdb_mastodon, df_youtube_final[["hashtag_chave", "views"]], on="hashtag_chave", how="left")
 
-    df_unificado_tudo["quantidade_posts"] = df_unificado_tudo["quantidade_posts"].fillna(0)
-    df_unificado_tudo["views"] = df_unificado_tudo["views"].fillna(0)
+    # Garante que nenhum DataFrame seja None
+    if df_tmdb_final is None or df_tmdb_final.empty:
+        df_tmdb_final = pd.DataFrame(columns=["hashtag_chave"])
+    if df_mastodon_final is None or df_mastodon_final.empty:
+        df_mastodon_final = pd.DataFrame(columns=["hashtag_chave", "quantidade_posts"])
+    if df_youtube_final is None or df_youtube_final.empty:
+        df_youtube_final = pd.DataFrame(columns=["hashtag_chave", "views"])
 
-    print(f"\n Todos os dados foram unificados.")
+    #  Merge seguro 
+    df_tmdb_mastodon = pd.merge(
+        df_tmdb_final, df_mastodon_final, on="hashtag_chave", how="left"
+    )
+    df_unificado_tudo = pd.merge(
+        df_tmdb_mastodon, df_youtube_final, on="hashtag_chave", how="left"
+    )
+
+    df_unificado_tudo["quantidade_posts"] = df_unificado_tudo.get("quantidade_posts", 0).fillna(0)
+    df_unificado_tudo["views"] = df_unificado_tudo.get("views", 0).fillna(0)
+
+    print(f"\n✅ Todos os dados foram unificados com sucesso.")
     return df_unificado_tudo
 
+
 # Normalizando (ou padronizar) os dados
-def normalizarlizacao(df):
+def normalizar_dados(df):
     df_normalizar = df.copy()
     scaler = MinMaxScaler()
 
@@ -168,4 +190,3 @@ def calcular_sucesso(df):
     
     print(f"\n Acaba de ser calculado a previsão de sucesso das obras!")
     return df
-
