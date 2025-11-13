@@ -14,7 +14,6 @@ print(f"📁 Caminho DADOS_PATH: {DADOS_PATH}")
 print(f"📁 Caminho MASTODON_PATH: {MASTODON_PATH}")
 print(f"📁 Caminho YOUTUBE_PATH: {YOUTUBE_PATH}\n")
 
-
 # Carregando dados do TMDB
 def carregar_dados_tmdb(nome_arquivo, tipo_obra, categoria):
     nome_base, _ = os.path.splitext(nome_arquivo)
@@ -51,7 +50,7 @@ def carregar_dados_tmdb(nome_arquivo, tipo_obra, categoria):
     df["fonte_arquivo"] = nome_arquivo
 
     df_final_dados = df[colunas_tmdb].copy()
-    print(f"📂 Foi carregado {df_final_dados.shape[0]} registros.")
+    print(f"📂 Foi carregado {df_final_dados.shape[0]} registros. \n")
     return df_final_dados
 
 # Juntando os dados do TMDB
@@ -86,12 +85,11 @@ def carregar_dados_mastodon():
         df_mastodon.dropna(subset=["hashtag_chave"], inplace=True)
         df_mastodon.drop_duplicates(subset=["hashtag_chave"], keep="first", inplace=True)
 
-        print(f"\n 📂 Foram carregados do Mastodon: {df_mastodon.shape[0]} registros.")
+        print(f"\n 📂 Foram carregados do Mastodon: {df_mastodon.shape[0]} registros. \n")
         return df_mastodon
 
     except Exception as e:
-        print(f"\n ⚠️ Atenção: Arquivo do Mastodon não encontrado. Erro: {e}")
-        # Retornar DataFrame vazio evita travamento
+        print(f"\n Atenção: Arquivo do Mastodon não encontrado. Erro: {e}")
         return pd.DataFrame(columns=["hashtag_chave", "quantidade_posts"])
 
 # Carregando dados do YouTube
@@ -136,7 +134,6 @@ def unificar_dados():
     df_mastodon_final = carregar_dados_mastodon()
     df_youtube_final = dados_youtube()
 
-    # Garante que nenhum DataFrame seja None
     if df_tmdb_final is None or df_tmdb_final.empty:
         df_tmdb_final = pd.DataFrame(columns=["hashtag_chave"])
     if df_mastodon_final is None or df_mastodon_final.empty:
@@ -144,7 +141,6 @@ def unificar_dados():
     if df_youtube_final is None or df_youtube_final.empty:
         df_youtube_final = pd.DataFrame(columns=["hashtag_chave", "views"])
 
-    #  Merge seguro 
     df_tmdb_mastodon = pd.merge(
         df_tmdb_final, df_mastodon_final, on="hashtag_chave", how="left"
     )
@@ -157,7 +153,6 @@ def unificar_dados():
 
     print(f"\n✅ Todos os dados foram unificados com sucesso.")
     return df_unificado_tudo
-
 
 # Normalizando (ou padronizar) os dados
 def normalizar_dados(df):
