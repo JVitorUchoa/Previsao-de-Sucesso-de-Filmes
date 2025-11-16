@@ -3,8 +3,8 @@ import matplotlib.pyplot as plt
 import seaborn as sns
 
 # SÉRIE
-arquivo_serie=pd.read_csv('./dados/series_futuras_com_renovadas.csv')
-arquivo_filme=pd.read_csv('./dados/filmes_top100.csv')
+arquivo_serie=pd.read_csv('../dados/series_futuras_com_renovadas.csv')
+arquivo_filme=pd.read_csv('../dados/filmes_top100.csv')
 
 arquivo_serie=arquivo_serie.sort_values(by='Popularidade',ascending=False).head(15)
 arquivo_filme=arquivo_filme.sort_values(by='Popularidade',ascending=False).head(15)
