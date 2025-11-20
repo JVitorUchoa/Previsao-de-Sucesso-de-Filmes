@@ -40,7 +40,7 @@ def carregar_dados_tmdb(nome_arquivo, tipo_obra, categoria):
 
     df = pd.concat([df_csv_tmdb, df_json_tmdb], ignore_index=True)
 
-    df = df.rename(columns={"Popularidade": "popularidade", "Nome": "titulo", "Gêneros": "genero"})
+    df = df.rename(columns={"Popularidade": "popularidade", "Nome": "titulo", "Gênero": "genero"})
              
     df["hashtag_chave"] = (df["titulo"].astype(str).str.lower().str.replace(r'[^a-z0-9]', '' , regex=True))
 
