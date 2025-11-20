@@ -28,22 +28,22 @@ df_top15_series = df_series.sort_values(by= "sucesso_pontos", ascending=False).h
 
 sns.set(style='whitegrid')
 
-fig,axes=plt.subplots(2,1,figsize=(9,9))
+fig,axes=plt.subplots(2,1,figsize=(10,12))
 
 # FILMES
 sns.barplot(
     data=df_top15_filmes,
     y='titulo_x',
     x='sucesso_pontos',
-    hue='categoria_status_x',
+    hue='genero',
     dodge=False,
     palette='tab10',
     ax=axes[0]
 )
-axes[0].set_title('Top 15 filmes mais populares por Gênero',fontsize=14,pad=15)
-axes[0].set_xlabel('Popularidade',fontsize=12)
-axes[0].set_ylabel('Nome de filmes',fontsize=12)
-axes[0].legend(title='Gênero',bbox_to_anchor=(1.05,1),loc='upper left')
+axes[0].set_title('Top 15 filmes mais populares por Gênero',fontsize=10,pad=12)
+axes[0].set_xlabel('Popularidade',fontsize=10)
+axes[0].set_ylabel('Nome de filmes',fontsize=10)
+axes[0].legend(title='Gênero',bbox_to_anchor=(1.05,1),loc='upper left',fontsize=8,title_fontsize=8)
 
 # SÉRIES
 
@@ -51,15 +51,15 @@ sns.barplot(
     data=df_top15_series,
     y='titulo_x',
     x='sucesso_pontos',
-    hue='categoria_status_x',
+    hue='genero',
     dodge=False,
     palette='tab10',
     ax=axes[1]
 )
-axes[1].set_title('Top 15 séries mais populares por Gênero',fontsize=14,pad=15)
-axes[1].set_xlabel('Popularidade',fontsize=12)
-axes[1].set_ylabel('Nome de séries',fontsize=12)
-axes[1].legend(title='Gênero',bbox_to_anchor=(1.05,1),loc='upper left')
+axes[1].set_title('Top 15 séries mais populares por Gênero',fontsize=10,pad=12)
+axes[1].set_xlabel('Popularidade',fontsize=10)
+axes[1].set_ylabel('Nome de séries',fontsize=10)
+axes[1].legend(title='Gênero',bbox_to_anchor=(1.05,1),loc='upper left',fontsize=8,title_fontsize=8)
 
 
 plt.tight_layout()
