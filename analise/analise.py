@@ -17,8 +17,7 @@ print(f" Caminho YOUTUBE_PATH: {YOUTUBE_PATH}\n")
 # Carregando dados do TMDB
 def carregar_dados_tmdb(nome_arquivo, tipo_obra, categoria):
     nome_base, _ = os.path.splitext(nome_arquivo)
-
-    colunas_tmdb = ["titulo", "popularidade", "hashtag_chave", "tipo_obra", "categoria_status", "fonte_arquivo"]
+    colunas_tmdb = ["titulo", "popularidade", "genero", "hashtag_chave", "tipo_obra", "categoria_status", "fonte_arquivo"]
     
     df_csv_tmdb = pd.DataFrame(columns=colunas_tmdb)
     df_json_tmdb = pd.DataFrame(columns=colunas_tmdb)
@@ -41,7 +40,7 @@ def carregar_dados_tmdb(nome_arquivo, tipo_obra, categoria):
 
     df = pd.concat([df_csv_tmdb, df_json_tmdb], ignore_index=True)
 
-    df = df.rename(columns={"Popularidade": "popularidade", "Nome": "titulo"})
+    df = df.rename(columns={"Popularidade": "popularidade", "Nome": "titulo", "Gêneros": "genero"})
              
     df["hashtag_chave"] = (df["titulo"].astype(str).str.lower().str.replace(r'[^a-z0-9]', '' , regex=True))
 
