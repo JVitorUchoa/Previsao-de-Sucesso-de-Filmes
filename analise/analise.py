@@ -9,16 +9,15 @@ DADOS_PATH = os.path.join(BASE_DIR, "dados")
 MASTODON_PATH = os.path.join(BASE_DIR, "mastodon", "mastodon_coleta")
 YOUTUBE_PATH = os.path.join(BASE_DIR, "youtube")
 
-print(f"\n🧭 Diretório base detectado: {BASE_DIR}")
-print(f"📁 Caminho DADOS_PATH: {DADOS_PATH}")
-print(f"📁 Caminho MASTODON_PATH: {MASTODON_PATH}")
-print(f"📁 Caminho YOUTUBE_PATH: {YOUTUBE_PATH}\n")
+print(f"\n Diretório base detectado: {BASE_DIR}")
+print(f" Caminho DADOS_PATH: {DADOS_PATH}")
+print(f" Caminho MASTODON_PATH: {MASTODON_PATH}")
+print(f" Caminho YOUTUBE_PATH: {YOUTUBE_PATH}\n")
 
 # Carregando dados do TMDB
 def carregar_dados_tmdb(nome_arquivo, tipo_obra, categoria):
     nome_base, _ = os.path.splitext(nome_arquivo)
-
-    colunas_tmdb = ["titulo", "popularidade", "hashtag_chave", "tipo_obra", "categoria_status", "fonte_arquivo"]
+    colunas_tmdb = ["titulo", "popularidade", "genero", "hashtag_chave", "tipo_obra", "categoria_status", "fonte_arquivo"]
     
     df_csv_tmdb = pd.DataFrame(columns=colunas_tmdb)
     df_json_tmdb = pd.DataFrame(columns=colunas_tmdb)
@@ -41,7 +40,7 @@ def carregar_dados_tmdb(nome_arquivo, tipo_obra, categoria):
 
     df = pd.concat([df_csv_tmdb, df_json_tmdb], ignore_index=True)
 
-    df = df.rename(columns={"Popularidade": "popularidade", "Nome": "titulo"})
+    df = df.rename(columns={"Popularidade": "popularidade", "Nome": "titulo", "Gênero": "genero"})
              
     df["hashtag_chave"] = (df["titulo"].astype(str).str.lower().str.replace(r'[^a-z0-9]', '' , regex=True))
 
@@ -50,7 +49,7 @@ def carregar_dados_tmdb(nome_arquivo, tipo_obra, categoria):
     df["fonte_arquivo"] = nome_arquivo
 
     df_final_dados = df[colunas_tmdb].copy()
-    print(f"📂 Foi carregado {df_final_dados.shape[0]} registros. \n")
+    print(f"Foi carregado {df_final_dados.shape[0]} registros. \n")
     return df_final_dados
 
 # Juntando os dados do TMDB
@@ -85,7 +84,7 @@ def carregar_dados_mastodon():
         df_mastodon.dropna(subset=["hashtag_chave"], inplace=True)
         df_mastodon.drop_duplicates(subset=["hashtag_chave"], keep="first", inplace=True)
 
-        print(f"\n 📂 Foram carregados do Mastodon: {df_mastodon.shape[0]} registros. \n")
+        print(f"\n Foram carregados do Mastodon: {df_mastodon.shape[0]} registros. \n")
         return df_mastodon
 
     except Exception as e:
@@ -119,7 +118,7 @@ def carregar_dados_youtube(nome_arquivo, tipo_obra, categoria):
     df_json_youtube["fonte_arquivo"] = nome_arquivo
 
     df_final = df_json_youtube[colunas_youtube].copy()
-    print(f"\n 📂 Foi carregado do YouTube: {df_final.shape[0]} registros.")
+    print(f"Foi carregado do YouTube: {df_final.shape[0]} registros.")
     return df_final
 
 def dados_youtube():
@@ -151,7 +150,7 @@ def unificar_dados():
     df_unificado_tudo["quantidade_posts"] = df_unificado_tudo.get("quantidade_posts", 0).fillna(0)
     df_unificado_tudo["views"] = df_unificado_tudo.get("views", 0).fillna(0)
 
-    print(f"\n✅ Todos os dados foram unificados com sucesso.")
+    print(f"\n Os dados foram unificados.")
     return df_unificado_tudo
 
 # Normalizando (ou padronizar) os dados
@@ -167,9 +166,9 @@ def normalizar_dados(df):
         df_normalizar["views_normalizacao"] = (scaler.fit_transform(df_normalizar[["views"]]) * 100)
     else:
         df_normalizar["views_normalizacao"] = 0  
-        print(f"\n Aviso: Coluna 'views' não encontrada para normalização. Atribuindo 0.")  
+        print(f"\n Atenção: Coluna 'views' não foi encontrada para normalização.")  
 
-    print(f"\n Dados foram normalizados, estão padronizados e prontos para análise!")
+    print(f"\n Os dados foram normalizados e prontos para análise.")
     return df_normalizar
 
 # Fazendo o calcúlo de sucesso
