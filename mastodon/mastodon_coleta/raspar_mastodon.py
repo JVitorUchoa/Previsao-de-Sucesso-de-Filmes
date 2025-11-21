@@ -30,6 +30,5 @@ for tag in hashtags:
 
 df_result = pd.DataFrame(resultados)
 df_result.to_csv("mastodon_hashtags.csv", index=False)
-print("\n
- Dados salvos em mastodon_hashtags.csv")
+print("\nDados salvos em mastodon_hashtags.csv")
 print(df_result.head())
