@@ -2,10 +2,15 @@ import requests
 import pandas as pd
 from time import sleep
 
-# Lê as hashtags dos filmes,cria lista de hashtags,cria data frame e salva os resultados
-df = pd.read_csv("filmes_hashtags.csv")
+#nova alteração aqui:
+# Lê as hashtags dos filmes e das séries
+df_filmes = pd.read_csv("filmes_hashtags.csv")
+df_series = pd.read_csv("series_hashtags.csv")
 
-hashtags = df["hashtag"].tolist()[:30]
+df = pd.concat([df_filmes, df_series], ignore_index=True)
+
+hashtags = df["hashtag"].tolist()
+
 
 resultados = []
 
