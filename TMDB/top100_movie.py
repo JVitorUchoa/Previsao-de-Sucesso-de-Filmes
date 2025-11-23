@@ -12,7 +12,7 @@ df = pd.read_csv(CSV_INPUT, encoding="utf-8-sig") #lê o arquivo CSV de entrada 
 #ordenar por popularidade (decrescente) e manter apenas os 100 primeiros
 df_top100 = df.sort_values(by="Popularidade", ascending=False).head(100).reset_index(drop=True)
 
-print(f"✅ {len(df_top100)} filmes selecionados (os mais populares):") #imprimi uma mensagem de confirmação e imprimi as cinco primeiras linhas do dataframe
+print(f"{len(df_top100)} filmes selecionados (os mais populares):") #imprimi uma mensagem de confirmação e imprimi as cinco primeiras linhas do dataframe
 print(df_top100.head())
 
 #salva o DataFrame do Top 100 no arquivo CSV de saída

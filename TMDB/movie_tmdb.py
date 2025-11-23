@@ -84,7 +84,7 @@ def save_json(data, file=JSON_FILE): #salva a mesma lista de dicionários em for
 # Coleta principal 
 print(" Coletando filmes futuros do TMDB (Novembro/2025 a 2028)...")
 filmes_raw = discover_movies_future(API_KEY, start_date="2025-11-01", end_date="2028-12-31")
-print(f"📝 {len(filmes_raw)} filmes encontrados no Discover.")
+print(f" {len(filmes_raw)} filmes encontrados no Discover.")
 
 linhas = [] #inicializa uma lista vazia que irá armazenar os dicionários de filmes formatados e filtrados
 batch_size = 20 #significa que, a cada 20 filmes processados, o código irá executar uma ação de salvar os dados
@@ -107,4 +107,4 @@ with ThreadPoolExecutor(max_workers=10) as executor: #cria um executor de thread
 #salva o restante,garante que todos os filmes que foram processados e adicionados à lista linhas,sejam gravados no arquivo CSV e JSON
 save_csv(linhas) #chama a função de salvamento em formato CSV
 save_json(linhas) #chama a função de salvamento em formato JSON
-print(f"✅ Coleta finalizada! {len(linhas)} filmes futuros (Nov/2025-2028) filtrados, ordenados por popularidade e salvos em CSV e JSON.")
+print(f" Coleta finalizada! {len(linhas)} filmes futuros (Nov/2025-2028) filtrados, ordenados por popularidade e salvos em CSV e JSON.")

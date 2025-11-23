@@ -152,7 +152,7 @@ todas_series = linhas_novas + linhas_renovadas
 save_csv(todas_series)
 save_json(todas_series)
 
-print(f"\n✅ Coleta finalizada!")
+print(f"\n Coleta finalizada!")
 print(f" → Novas séries: {len(linhas_novas)}")
 print(f" → Renovadas: {len(linhas_renovadas)}")
 print(f" → Total combinado: {len(todas_series)} salvas em '{CSV_FILE_SERIES}' e '{JSON_FILE_SERIES}'")
