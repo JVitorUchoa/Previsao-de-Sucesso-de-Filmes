@@ -36,4 +36,4 @@ plt.savefig("top10_hashtags_series.png", bbox_inches="tight")
 plt.show()
 
 
-print("✅ Visualizações para séries geradas com sucesso!")
+print(" Visualizações para séries geradas com sucesso!")

@@ -9,7 +9,7 @@ hashtags = df["hashtag"].tolist()[:30]  # Primeiras 30 para teste
 
 resultados = []
 
-print("🔍 Coletando hashtags de séries no Mastodon...")
+print(" Coletando hashtags de séries no Mastodon...")
 
 for tag in hashtags:
     if pd.isna(tag) or tag == "":
@@ -26,12 +26,12 @@ for tag in hashtags:
             })
             print(f" #{tag}: {len(posts)} posts encontrados")
         else:
-            print(f"❌ Erro ao buscar #{tag}: {resp.status_code}")
+            print(f" Erro ao buscar #{tag}: {resp.status_code}")
     except Exception as e:
-        print(f"⚠️ Erro com #{tag}: {e}")
+        print(f" Erro com #{tag}: {e}")
     sleep(2)  
 
 df_result = pd.DataFrame(resultados)
 df_result.to_csv("mastodon_hashtags_series.csv", index=False)
-print("\n✅ Dados salvos em mastodon_hashtags_series.csv")
+print("\n Dados salvos em mastodon_hashtags_series.csv")
 print(df_result.head())

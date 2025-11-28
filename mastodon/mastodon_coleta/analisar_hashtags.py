@@ -4,12 +4,12 @@ import matplotlib.pyplot as plt
 # aqui ta lendo os resultados do Mastodon,mostra as 10 mais e cria um grafico simples
 df = pd.read_csv("mastodon_hashtags.csv")
 
-print("📊 Prévia dos dados:")
+print(" Prévia dos dados:")
 print(df.head())
 
 df = df.sort_values("quantidade_posts", ascending=False)
 
-print("\n🔥 Top 10 hashtags com mais posts:")
+print("\n Top 10 hashtags com mais posts:")
 print(df.head(10))
 
 plt.figure(figsize=(10,6))

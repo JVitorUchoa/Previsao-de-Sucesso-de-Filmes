@@ -11,10 +11,10 @@ df["hashtag"] = (
     .str.lower()
 )
 
-print("✅ Hashtags para séries geradas com sucesso!")
+print(" Hashtags para séries geradas com sucesso!")
 print(df[["Nome", "hashtag", "Tipo", "Temporada"]].head())
 
 # Salva no PRÓPRIO arquivo original, agora com a nova coluna
 df.to_csv("series.csv", index=False)
 
-print("📂 O arquivo series.csv foi atualizado com a coluna 'hashtag'")
+print(" O arquivo series.csv foi atualizado com a coluna 'hashtag'")

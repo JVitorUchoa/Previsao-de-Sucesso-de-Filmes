@@ -189,20 +189,20 @@ def calcular_sucesso(df):
 #teste
 if __name__ == "__main__":
 
-    print("\n🚀 Iniciando Análise dos Filmes e Séries...\n")
+    print("\n Iniciando Análise dos Filmes e Séries...\n")
 
     df_unificado = unificar_dados()
 
     if df_unificado.empty:
-        print("❌ Nenhum dado foi carregado.")
+        print(" Nenhum dado foi carregado.")
     else:
-        print("\n✅ Os dados foram unificados.")
+        print("\n Os dados foram unificados.")
 
         df_normalizado = normalizar_dados(df_unificado)
-        print("✅ Os dados foram normalizados e prontos para análise.")
+        print(" Os dados foram normalizados e prontos para análise.")
 
         df_final = calcular_sucesso(df_normalizado)
-        print("✅ Acaba de ser calculada a previsão de sucesso das obras!\n")
+        print(" Acaba de ser calculada a previsão de sucesso das obras!\n")
 
         print(f"Antes de remover duplicados: {len(df_final)} registros")
 
@@ -213,23 +213,23 @@ if __name__ == "__main__":
         keep="first"
 )
 
-        print(f"✅ Depois de remover duplicados: {len(df_final)} registros\n")
+        print(f" Depois de remover duplicados: {len(df_final)} registros\n")
 
-        print("\n📌 Colunas atuais do DataFrame final:")
+        print("\n Colunas atuais do DataFrame final:")
         print(df_final.columns)
 
 
-        print("🏆 Top 15 Obras de Sucesso:")
+        print(" Top 15 Obras de Sucesso:")
         print(df_final[['titulo_x','sucesso_classificar','sucesso_pontos']].head(15))
 
-        print("\n🎬 Top 10 Filmes de Sucesso:")
+        print("\n Top 10 Filmes de Sucesso:")
         print(df_final[df_final['tipo_obra_x'] == 'filme']
         [['titulo_x', 'sucesso_classificar', 'sucesso_pontos']]
         .sort_values(by='sucesso_pontos', ascending=False)
         .head(10))
 
 
-    print("\n📺 Top 10 Séries de Sucesso:")
+    print("\n Top 10 Séries de Sucesso:")
 
     top_series = df_final[
     df_final['tipo_obra_x'].str.contains("serie", case=False, na=False)

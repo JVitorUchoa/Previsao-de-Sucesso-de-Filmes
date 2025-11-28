@@ -8,12 +8,12 @@ df_info = pd.read_csv("series_hashtags.csv")
 # Combina os dados
 df = pd.merge(df_posts, df_info, on="hashtag", how="left")
 
-print("📊 Prévia dos dados de séries:")
+print(" Prévia dos dados de séries:")
 print(df.head())
 
 df = df.sort_values("quantidade_posts", ascending=False)
 
-print("\n🔥 Top 10 hashtags de séries com mais posts:")
+print("\n Top 10 hashtags de séries com mais posts:")
 print(df[["hashtag", "quantidade_posts", "Tipo", "Temporada"]].head(10))
 
 # Gráfico geral
